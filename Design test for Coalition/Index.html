@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#171918">
+    <meta name="description" content="Discover considered cameras, lenses, and photography essentials at Edris Camera Co. Gear for your next frame.">
+    <title>Edris Camera Co. — Gear for Your Next Frame</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="/css/script/main.js" defer></script>
+    <link rel="icon" type="image/png" href="/Images/image-removebg-preview (1).png">
+</head>
+<body>
+    <div class="scroll-progress" aria-hidden="true">
+        <span class="scroll-progress__bar"></span>
+        <span class="scroll-progress__label">0%</span>
+    </div>
+
+    <header class="site-header" id="top">
+        <a class="wordmark" href="#top" aria-label="Edris Camera Co. home">
+            <span class="wordmark__symbol" aria-hidden="true">E</span>
+            <span class="wordmark__text">EDRIS <span>CAMERA CO.</span></span>
+        </a>
+
+        <button class="menu-toggle icon-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+            <span class="menu-toggle__lines" aria-hidden="true"></span>
+        </button>
+
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+            <a class="nav-link is-current" href="#top">Home</a>
+            <div class="nav-item nav-item--mega">
+                <button class="nav-link nav-link--button mega-toggle" type="button" aria-expanded="false" aria-controls="gear-mega-menu">
+                    Cameras <span class="nav-caret" aria-hidden="true">⌄</span>
+                </button>
+                <div class="mega-menu" id="gear-mega-menu">
+                    <div class="mega-menu__group">
+                        <p class="mega-menu__eyebrow">SHOP CAMERAS</p>
+                        <a href="#categories">Mirrorless Cameras</a>
+                        <a href="#categories">DSLR Cameras</a>
+                        <a href="#categories">Compact Cameras</a>
+                        <a href="#categories">Cinema Cameras</a>
+                    </div>
+                    <div class="mega-menu__group">
+                        <p class="mega-menu__eyebrow">SHOP LENSES</p>
+                        <a href="#categories">Prime Lenses</a>
+                        <a href="#categories">Zoom Lenses</a>
+                        <a href="#categories">Telephoto Lenses</a>
+                        <a href="#categories">Wide-Angle Lenses</a>
+                    </div>
+                    <a href="#featured" class="mega-feature">
+                        <img src="/Images/main-img.png" alt="Mirrorless camera ready for a new frame" loading="lazy">
+                        <span>Find your next favorite <strong>Explore all cameras <span aria-hidden="true">↗</span></strong></span>
+                    </a>
+                </div>
+            </div>
+            <div class="nav-item nav-item--mega">
+                <button class="nav-link nav-link--button mega-toggle" type="button" aria-expanded="false" aria-controls="lens-mega-menu">
+                    Lenses <span class="nav-caret" aria-hidden="true">⌄</span>
+                </button>
+                <div class="mega-menu" id="lens-mega-menu">
+                    <div class="mega-menu__group">
+                        <p class="mega-menu__eyebrow">FIND YOUR FOCAL LENGTH</p>
+                        <a href="#featured">Prime Lenses</a>
+                        <a href="#featured">Zoom Lenses</a>
+                        <a href="#featured">Telephoto Lenses</a>
+                        <a href="#featured">Wide-Angle Lenses</a>
+                    </div>
+                    <div class="mega-menu__group">
+                        <p class="mega-menu__eyebrow">SHOP BY STYLE</p>
+                        <a href="#featured">Portrait Photography</a>
+                        <a href="#featured">Landscape Photography</a>
+                        <a href="#featured">Wildlife &amp; Sports</a>
+                        <a href="#featured">Everyday Carry</a>
+                    </div>
+                    <a href="#featured" class="mega-feature">
+                        <img src="https://images.unsplash.com/photo-1617005082133-548c4dd27f35?auto=format&fit=crop&w=560&q=85" alt="Close-up of a professional camera lens" loading="lazy">
+                        <span>Make every millimeter count <strong>Explore all lenses <span aria-hidden="true">↗</span></strong></span>
+                    </a>
+                </div>
+            </div>
+            <a class="nav-link" href="#categories">Accessories</a>
+            <a class="nav-link" href="#featured">Brands</a>
+            <a class="nav-link" href="#guides">Guides</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="icon-button search-toggle" type="button" aria-label="Search products" aria-expanded="false">
+                <span aria-hidden="true">⌕</span>
+            </button>
+            <a class="icon-button account-link" href="#footer" aria-label="Account">♙</a>
+            <button class="icon-button list-toggle favorites-toggle" type="button" aria-label="Favorites, 0 items" aria-controls="shopping-list-dialog" data-list-tab="favorites">
+                <span aria-hidden="true">♡</span><span class="list-count favorites-count" aria-live="polite">0</span>
+            </button>
+            <button class="icon-button bag-link list-toggle" type="button" aria-label="Shopping bag, 0 items" aria-controls="shopping-list-dialog" data-list-tab="bag">
+                <span aria-hidden="true">▱</span><span class="cart-count" aria-live="polite">0</span>
+            </button>
+            <button class="icon-button theme-toggle" type="button" aria-label="Switch to light mode">
+                <span aria-hidden="true" class="theme-icon">☼</span>
+            </button>
+        </div>
+        <form class="search-panel" role="search" hidden>
+            <label class="visually-hidden" for="site-search">Search products</label>
+            <input id="site-search" type="search" placeholder="Search cameras, lenses, and more" autocomplete="off">
+            <button type="submit" class="button button--small">Search</button>
+            <button class="search-clear" type="button" aria-label="Clear search" hidden>×</button>
+        </form>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="hero__copy">
+                <p class="eyebrow"><span class="eyebrow__dash"></span> GEAR FOR YOUR NEXT FRAME</p>
+                <h1 id="hero-heading">Capture what<br>moves <em>you.</em></h1>
+                <p class="hero__description">Discover precision cameras, exceptional lenses, and photography gear built to bring your creative vision to life.</p>
+                <div class="hero__actions">
+                    <a href="#categories" class="button">Shop cameras <span aria-hidden="true">↗</span></a>
+                    <a href="#categories" class="text-link">Explore lenses <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="hero__caption"><span>01 / 01</span><span>Built for the way you see.</span></div>
+            </div>
+            <div class="hero__visual">
+                <img class="hero-image" src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1500&q=90" alt="A premium mirrorless camera photographed in a dark studio" fetchpriority="high">
+                <div class="hero__image-note"><span>01</span><span>Made to make<br>you look twice.</span></div>
+            </div>
+            <a class="scroll-cue" href="#categories"><span class="scroll-cue__line"></span> SCROLL TO EXPLORE</a>
+            <span class="hero__vertical-label" aria-hidden="true">EDRIS CAMERA CO. — EST. 2026</span>
+        </section>
+
+        <section class="section categories-section" id="categories" aria-labelledby="categories-heading">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow eyebrow--dark">MADE FOR YOUR PERSPECTIVE</p>
+                    <h2 id="categories-heading">Find your perfect <em>gear.</em></h2>
+                </div>
+                <div class="category-controls">
+                    <a href="pages/cameras.html" class="text-link text-link--dark">Shop all gear <span aria-hidden="true">↗</span></a>
+                    <button class="carousel-button" type="button" data-direction="previous" aria-label="Previous categories">←</button>
+                    <button class="carousel-button" type="button" data-direction="next" aria-label="Next categories">→</button>
+                </div>
+            </div>
+            <div class="category-grid" aria-live="polite">
+                <article class="category-card">
+                    <a href="#featured" class="category-card__image">
+                        <img src="/Images/main-img.png" alt="Mirrorless camera body with a versatile lens" loading="lazy">
+                        <span class="category-card__number">01</span>
+                    </a>
+                    <div class="category-card__copy">
+                        <h3>Cameras</h3>
+                        <p>Explore mirrorless, DSLR, compact, and professional cameras.</p>
+                        <a href="#featured" class="arrow-link">Shop cameras <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="category-card">
+                    <a href="pages/film-cameras.html" class="category-card__image">
+                        <img src="/Images/img2.png" alt="Classic compact film camera for analog photography" loading="lazy">
+                        <span class="category-card__number">04</span>
+                    </a>
+                    <div class="category-card__copy">
+                        <h3>Film &amp; Instant</h3>
+                        <p>Find the joy of analog with film cameras, instant prints, and creative film stocks.</p>
+                        <a href="pages/film-cameras.html" class="arrow-link">Shop film cameras <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="category-card">
+                    <a href="pages/lighting.html" class="category-card__image">
+                        <img src="/Images/img8.PNG" alt="Photography lighting equipment for studio and location work" loading="lazy">
+                        <span class="category-card__number">05</span>
+                    </a>
+                    <div class="category-card__copy">
+                        <h3>Lighting</h3>
+                        <p>Shape your scene with portable flashes, studio lights, and light-shaping tools.</p>
+                        <a href="pages/lighting.html" class="arrow-link">Explore lighting <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="category-card">
+                    <a href="pages/tripods-support.html" class="category-card__image">
+                        <img src="/Images/img5.PNG" alt="Camera and tripod for steady landscape photography" loading="lazy">
+                        <span class="category-card__number">06</span>
+                    </a>
+                    <div class="category-card__copy">
+                        <h3>Tripods &amp; Support</h3>
+                        <p>Stay steady with dependable tripods, heads, straps, and camera supports.</p>
+                        <a href="pages/tripods-support.html" class="arrow-link">Shop support gear <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="category-card">
+                    <a href="#featured" class="category-card__image">
+                        <img src="/Images/img2.png" alt="Professional camera lens viewed up close" loading="lazy">
+                        <span class="category-card__number">02</span>
+                    </a>
+                    <div class="category-card__copy">
+                        <h3>Lenses</h3>
+                        <p>Find the right focal length for portraits, landscapes, sports, and everyday photography.</p>
+                        <a href="#featured" class="arrow-link">Explore lenses <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="category-card">
+                    <a href="#featured" class="category-card__image">
+                        <img src="/Images/img3.png" alt="Photography kit with camera and essential accessories" loading="lazy">
+                        <span class="category-card__number">03</span>
+                    </a>
+                    <div class="category-card__copy">
+                        <h3>Accessories</h3>
+                        <p>Complete your setup with essential tools for every shooting situation.</p>
+                        <a href="#featured" class="arrow-link">Shop accessories <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section featured-section" id="featured" aria-labelledby="featured-heading">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow eyebrow--dark">THE GOOD STUFF</p>
+                    <h2 id="featured-heading">Featured <em>gear.</em></h2>
+                </div>
+                <a href="#categories" class="text-link text-link--dark">View all products <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="product-card__visual">
+                        <span class="product-badge">15% OFF · Bestseller</span>
+                        <button class="wishlist-button" type="button" aria-label="Add Edris X7 Mirrorless Camera to wishlist" aria-pressed="false">♡</button>
+                        <img src="/Images/main-img.png" alt="Edris X7 mirrorless camera" loading="lazy">
+                    </div>
+                    <div class="product-card__details">
+                        <div class="product-card__rating"><span aria-hidden="true">★★★★★</span> <span>4.9</span></div>
+                        <h3>Edris X7 Mirrorless Camera</h3>
+                        <p class="product-price"><del>$1,529.00</del> $1,299.00</p>
+                        <div class="product-actions"><button class="add-to-cart" type="button" data-product="Edris X7 Mirrorless Camera" data-price="1299">Add to bag <span aria-hidden="true">+</span></button><button class="buy-now" type="button" data-product="Edris X7 Mirrorless Camera" data-price="1299">Buy now ↗</button></div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-card__visual">
+                        <span class="product-badge">10% OFF · Popular</span>
+                        <button class="wishlist-button" type="button" aria-label="Add Edris 35mm f/1.8 Prime Lens to wishlist" aria-pressed="false">♡</button>
+                        <img src="/Images/img2.png" alt="Edris 35mm f/1.8 prime lens" loading="lazy">
+                    </div>
+                    <div class="product-card__details">
+                        <div class="product-card__rating"><span aria-hidden="true">★★★★★</span> <span>4.8</span></div>
+                        <h3>Edris 35mm f/1.8 Prime Lens</h3>
+                        <p class="product-price"><del>$499.00</del> $449.00</p>
+                        <div class="product-actions"><button class="add-to-cart" type="button" data-product="Edris 35mm f/1.8 Prime Lens" data-price="449">Add to bag <span aria-hidden="true">+</span></button><button class="buy-now" type="button" data-product="Edris 35mm f/1.8 Prime Lens" data-price="449">Buy now ↗</button></div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-card__visual">
+                        <span class="product-badge">Professional</span>
+                        <button class="wishlist-button" type="button" aria-label="Add Edris Pro Zoom 70–200mm to wishlist" aria-pressed="false">♡</button>
+                        <img src="/Images/Pro Zoom 70200mm.png" alt="Professional telephoto zoom lens" loading="lazy">
+                    </div>
+                    <div class="product-card__details">
+                        <div class="product-card__rating"><span aria-hidden="true">★★★★★</span> <span>4.7</span></div>
+                        <h3>Edris Pro Zoom 70–200mm</h3>
+                        <p class="product-price">$1,099.00</p>
+                        <div class="product-actions"><button class="add-to-cart" type="button" data-product="Edris Pro Zoom 70–200mm" data-price="1099">Add to bag <span aria-hidden="true">+</span></button><button class="buy-now" type="button" data-product="Edris Pro Zoom 70–200mm" data-price="1099">Buy now ↗</button></div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-card__visual">
+                        <span class="product-badge">20% OFF · New arrival</span>
+                        <button class="wishlist-button" type="button" aria-label="Add Edris Explorer Camera Bag to wishlist" aria-pressed="false">♡</button>
+                        <img src="/Images/img44.PNG" alt="Durable camera bag for exploring" loading="lazy">
+                    </div>
+                    <div class="product-card__details">
+                        <div class="product-card__rating"><span aria-hidden="true">★★★★★</span> <span>4.6</span></div>
+                        <h3>Edris Explorer Camera Bag</h3>
+                        <p class="product-price"><del>$111.00</del> $89.00</p>
+                        <div class="product-actions"><button class="add-to-cart" type="button" data-product="Edris Explorer Camera Bag" data-price="89">Add to bag <span aria-hidden="true">+</span></button><button class="buy-now" type="button" data-product="Edris Explorer Camera Bag" data-price="89">Buy now ↗</button></div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-card__visual">
+                        <span class="product-badge">12% OFF</span>
+                        <button class="wishlist-button" type="button" aria-label="Add Edris Field Tripod to wishlist" aria-pressed="false">♡</button>
+                        <img src="/Images/img5.PNG" alt="Camera mounted on a sturdy photography tripod" loading="lazy">
+                    </div>
+                    <div class="product-card__details">
+                        <div class="product-card__rating"><span aria-hidden="true">★★★★★</span> <span>4.8</span></div>
+                        <h3>Edris Field Tripod</h3>
+                        <p class="product-price"><del>$159.00</del> $139.00</p>
+                        <div class="product-actions"><button class="add-to-cart" type="button" data-product="Edris Field Tripod" data-price="139">Add to bag <span aria-hidden="true">+</span></button><button class="buy-now" type="button" data-product="Edris Field Tripod" data-price="139">Buy now ↗</button></div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-card__visual">
+                        <span class="product-badge">Just in</span>
+                        <button class="wishlist-button" type="button" aria-label="Add Edris Explorer Compact to wishlist" aria-pressed="false">♡</button>
+                        <img src="/Images/img6.PNG" alt="Compact travel camera ready for a day out" loading="lazy">
+                    </div>
+                    <div class="product-card__details">
+                        <div class="product-card__rating"><span aria-hidden="true">★★★★★</span> <span>4.7</span></div>
+                        <h3>Edris Explorer Compact</h3>
+                        <p class="product-price">$699.00</p>
+                        <div class="product-actions"><button class="add-to-cart" type="button" data-product="Edris Explorer Compact" data-price="699">Add to bag <span aria-hidden="true">+</span></button><button class="buy-now" type="button" data-product="Edris Explorer Compact" data-price="699">Buy now ↗</button></div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-card__visual">
+                        <span class="product-badge">15% OFF</span>
+                        <button class="wishlist-button" type="button" aria-label="Add Edris 85mm Portrait Lens to wishlist" aria-pressed="false">♡</button>
+                        <img src="/Images/img7.PNG" alt="Portrait photography lens with smooth focus ring" loading="lazy">
+                    </div>
+                    <div class="product-card__details">
+                        <div class="product-card__rating"><span aria-hidden="true">★★★★★</span> <span>4.9</span></div>
+                        <h3>Edris 85mm Portrait Lens</h3>
+                        <p class="product-price"><del>$529.00</del> $449.00</p>
+                        <div class="product-actions"><button class="add-to-cart" type="button" data-product="Edris 85mm Portrait Lens" data-price="449">Add to bag <span aria-hidden="true">+</span></button><button class="buy-now" type="button" data-product="Edris 85mm Portrait Lens" data-price="449">Buy now ↗</button></div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-card__visual">
+                        <span class="product-badge">Essential</span>
+                        <button class="wishlist-button" type="button" aria-label="Add Edris Creator Flash to wishlist" aria-pressed="false">♡</button>
+                        <img src="/Images/img8.PNG" alt="Portable photography flash and lighting accessory" loading="lazy">
+                    </div>
+                    <div class="product-card__details">
+                        <div class="product-card__rating"><span aria-hidden="true">★★★★★</span> <span>4.6</span></div>
+                        <h3>Edris Creator Flash</h3>
+                        <p class="product-price">$119.00</p>
+                        <div class="product-actions"><button class="add-to-cart" type="button" data-product="Edris Creator Flash" data-price="119">Add to bag <span aria-hidden="true">+</span></button><button class="buy-now" type="button" data-product="Edris Creator Flash" data-price="119">Buy now ↗</button></div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-card__visual">
+                        <span class="product-badge">10% OFF</span>
+                        <button class="wishlist-button" type="button" aria-label="Add Edris X5 Creator Camera to wishlist" aria-pressed="false">♡</button>
+                        <img src="/Images/img9.png" alt="Edris X5 mirrorless camera body" loading="lazy">
+                    </div>
+                    <div class="product-card__details">
+                        <div class="product-card__rating"><span aria-hidden="true">★★★★★</span> <span>4.8</span></div>
+                        <h3>Edris X5 Creator Camera</h3>
+                        <p class="product-price"><del>$999.00</del> $899.00</p>
+                        <div class="product-actions"><button class="add-to-cart" type="button" data-product="Edris X5 Creator Camera" data-price="899">Add to bag <span aria-hidden="true">+</span></button><button class="buy-now" type="button" data-product="Edris X5 Creator Camera" data-price="899">Buy now ↗</button></div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-card__visual">
+                        <span class="product-badge">Everyday favorite</span>
+                        <button class="wishlist-button" type="button" aria-label="Add Edris 24mm Wide Prime Lens to wishlist" aria-pressed="false">♡</button>
+                        <img src="/Images/24mm Wide Prime Lens.png" alt="Edris 24mm wide-angle prime lens" loading="lazy">
+                    </div>
+                    <div class="product-card__details">
+                        <div class="product-card__rating"><span aria-hidden="true">★★★★★</span> <span>4.7</span></div>
+                        <h3>Edris 24mm Wide Prime Lens</h3>
+                        <p class="product-price">$389.00</p>
+                        <div class="product-actions"><button class="add-to-cart" type="button" data-product="Edris 24mm Wide Prime Lens" data-price="389">Add to bag <span aria-hidden="true">+</span></button><button class="buy-now" type="button" data-product="Edris 24mm Wide Prime Lens" data-price="389">Buy now ↗</button></div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-card__visual">
+                        <span class="product-badge">15% OFF</span>
+                        <button class="wishlist-button" type="button" aria-label="Add Edris Pro Zoom 24–70mm to wishlist" aria-pressed="false">♡</button>
+                        <img src="/Images/Pro Zoom 2470mm.png" alt="Professional standard zoom camera lens" loading="lazy">
+                    </div>
+                    <div class="product-card__details">
+                        <div class="product-card__rating"><span aria-hidden="true">★★★★★</span> <span>4.8</span></div>
+                        <h3>Edris Pro Zoom 24–70mm</h3>
+                        <p class="product-price"><del>$799.00</del> $679.00</p>
+                        <div class="product-actions"><button class="add-to-cart" type="button" data-product="Edris Pro Zoom 24–70mm" data-price="679">Add to bag <span aria-hidden="true">+</span></button><button class="buy-now" type="button" data-product="Edris Pro Zoom 24–70mm" data-price="679">Buy now ↗</button></div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-card__visual">
+                        <span class="product-badge">Travel ready</span>
+                        <button class="wishlist-button" type="button" aria-label="Add Edris Daybreak Sling Bag to wishlist" aria-pressed="false">♡</button>
+                        <img src="/Images/Daybreak Sling Bag.png" alt="Compact padded sling camera bag" loading="lazy">
+                    </div>
+                    <div class="product-card__details">
+                        <div class="product-card__rating"><span aria-hidden="true">★★★★★</span> <span>4.6</span></div>
+                        <h3>Edris Daybreak Sling Bag</h3>
+                        <p class="product-price">$69.00</p>
+                        <div class="product-actions"><button class="add-to-cart" type="button" data-product="Edris Daybreak Sling Bag" data-price="69">Add to bag <span aria-hidden="true">+</span></button><button class="buy-now" type="button" data-product="Edris Daybreak Sling Bag" data-price="69">Buy now ↗</button></div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-card__visual">
+                        <span class="product-badge">Pro support</span>
+                        <button class="wishlist-button" type="button" aria-label="Add Edris Carbon Travel Tripod to wishlist" aria-pressed="false">♡</button>
+                        <img src="/Images/Carbon Travel Tripod.png" alt="Lightweight carbon travel tripod" loading="lazy">
+                    </div>
+                    <div class="product-card__details">
+                        <div class="product-card__rating"><span aria-hidden="true">★★★★★</span> <span>4.9</span></div>
+                        <h3>Edris Carbon Travel Tripod</h3>
+                        <p class="product-price">$229.00</p>
+                        <div class="product-actions"><button class="add-to-cart" type="button" data-product="Edris Carbon Travel Tripod" data-price="229">Add to bag <span aria-hidden="true">+</span></button><button class="buy-now" type="button" data-product="Edris Carbon Travel Tripod" data-price="229">Buy now ↗</button></div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-card__visual">
+                        <span class="product-badge">Creator essential</span>
+                        <button class="wishlist-button" type="button" aria-label="Add Edris Pocket LED Light to wishlist" aria-pressed="false">♡</button>
+                        <img src="/Images/Pocket LED Light.png" alt="Compact LED light for photography and video" loading="lazy">
+                    </div>
+                    <div class="product-card__details">
+                        <div class="product-card__rating"><span aria-hidden="true">★★★★★</span> <span>4.5</span></div>
+                        <h3>Edris Pocket LED Light</h3>
+                        <p class="product-price">$79.00</p>
+                        <div class="product-actions"><button class="add-to-cart" type="button" data-product="Edris Pocket LED Light" data-price="79">Add to bag <span aria-hidden="true">+</span></button><button class="buy-now" type="button" data-product="Edris Pocket LED Light" data-price="79">Buy now ↗</button></div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-card__visual">
+                        <span class="product-badge">Film favorite</span>
+                        <button class="wishlist-button" type="button" aria-label="Add Edris Snap Instant Camera to wishlist" aria-pressed="false">♡</button>
+                        <img src="/Images/Snap Instant Camera.png" alt="Instant film camera for creative everyday photographs" loading="lazy">
+                    </div>
+                    <div class="product-card__details">
+                        <div class="product-card__rating"><span aria-hidden="true">★★★★★</span> <span>4.7</span></div>
+                        <h3>Edris Snap Instant Camera</h3>
+                        <p class="product-price">$129.00</p>
+                        <div class="product-actions"><button class="add-to-cart" type="button" data-product="Edris Snap Instant Camera" data-price="129">Add to bag <span aria-hidden="true">+</span></button><button class="buy-now" type="button" data-product="Edris Snap Instant Camera" data-price="129">Buy now ↗</button></div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-card__visual">
+                        <span class="product-badge">Creator essential</span>
+                        <button class="wishlist-button" type="button" aria-label="Add Edris 128GB Pro Memory Card to wishlist" aria-pressed="false">♡</button>
+                        <img src="/Images/128GB Pro Memory Card.png" alt="High-speed memory card for photography and video" loading="lazy">
+                    </div>
+                    <div class="product-card__details">
+                        <div class="product-card__rating"><span aria-hidden="true">★★★★★</span> <span>4.8</span></div>
+                        <h3>Edris 128GB Pro Memory Card</h3>
+                        <p class="product-price">$39.00</p>
+                        <div class="product-actions"><button class="add-to-cart" type="button" data-product="Edris 128GB Pro Memory Card" data-price="39">Add to bag <span aria-hidden="true">+</span></button><button class="buy-now" type="button" data-product="Edris 128GB Pro Memory Card" data-price="39">Buy now ↗</button></div>
+                    </div>
+                </article>
+            </div>
+            <p class="product-search-feedback" aria-live="polite"></p>
+        </section>
+
+        <section class="story-section" id="guides" aria-labelledby="story-heading">
+            <div class="story-copy">
+                <p class="eyebrow eyebrow--dark">A LITTLE MORE ABOUT THE KIT</p>
+                <h2 id="story-heading">Find the right camera for your <em>creative vision.</em></h2>
+                <p class="story-paragraph">At Edris Camera Co., we believe the right camera helps you notice more, create with confidence, and preserve the moments that matter in life. Our range includes mirrorless cameras for travel and storytelling, DSLR cameras, compact models, and professional tools for demanding assignments. Whether you are taking your first steps or refining a distinctive style, you will find photography equipment chosen for performance, design, and lasting value. Pair your camera with lenses that shape the frame, from bright prime lenses for portraits to versatile zooms for wildlife, sports, and distant landscapes. Complete your kit with camera accessories including tripods, camera bags, memory cards, lighting, and practical protection for life on the move. Our team makes it easier to compare features, discover trusted brands, and choose gear that fits your vision and budget. Explore guides, find inspiration, and build a setup that grows with you. From spontaneous street scenes to studio work, Edris brings dependable products and creative possibilities together, so you can spend less time searching for equipment and more time making images worth sharing.</p>
+                <a href="pages/photography-guides.html" class="text-link text-link--dark">Explore our guides <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="story-image">
+                <img src="/Images/header-1.png" alt="Photographer's view of a quiet mountain landscape at golden hour" loading="lazy">
+                <span class="image-caption">A different way of seeing — Patagonia, 2024</span>
+            </div>
+        </section>
+
+        <section class="promo-section" aria-labelledby="promo-heading">
+            <img src="/Images/header-2.png" alt="Mountain landscape reflected in a still alpine lake" loading="lazy">
+            <div class="promo-overlay"></div>
+            <div class="promo-copy">
+                <p class="eyebrow">THE CREATOR'S EDIT</p>
+                <h2 id="promo-heading">Your next great<br>shot starts <em>here.</em></h2>
+                <p>Upgrade your photography setup with carefully selected gear for every creative journey.</p>
+                <a href="#featured" class="button">Explore the collection <span aria-hidden="true">↗</span></a>
+            </div>
+            <span class="promo-index">EDRIS / 2026</span>
+        </section>
+
+        <section class="newsletter-section" aria-labelledby="newsletter-heading">
+            <div class="newsletter-mark" aria-hidden="true">L.</div>
+            <div class="newsletter-copy">
+                <p class="eyebrow eyebrow--dark">GOOD THINGS IN FOCUS</p>
+                <h2 id="newsletter-heading">Stay focused on<br>what’s <em>next.</em></h2>
+                <p>Get product updates, photography tips, new arrivals, and exclusive offers delivered to your inbox.</p>
+            </div>
+            <form class="newsletter-form" novalidate>
+                <label for="newsletter-email">Your email address</label>
+                <div class="newsletter-form__input">
+                    <input id="newsletter-email" name="email" type="email" placeholder="edrisocampo@example.com" autocomplete="email" required>
+                    <button class="button" type="submit">Subscribe <span aria-hidden="true">↗</span></button>
+                </div>
+                <p class="form-feedback" aria-live="polite"></p>
+                <p class="privacy-note">By subscribing, you agree to our Privacy Policy. No noise, just the good stuff.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="footer">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <a class="wordmark" href="#top" aria-label="Edris Camera Co. home">
+                    <span class="wordmark__symbol" aria-hidden="true">E</span>
+                    <span class="wordmark__text">EDRIS <span>CAMERA CO.</span></span>
+                </a>
+                <p>For the curious, the considered, and the moments in between. Gear for your next frame, from Edris Camera Co.</p>
+                <a class="footer-newsletter-link" href="#newsletter-heading">Join our newsletter <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h2>Shop</h2>
+                    <a href="pages/cameras.html">Cameras</a><a href="pages/lenses.html">Lenses</a><a href="pages/accessories.html">Accessories</a><a href="pages/new-arrivals.html">New arrivals</a><a href="pages/bestsellers.html">Bestsellers</a><a href="pages/film-cameras.html">Film &amp; instant</a><a href="pages/lighting.html">Lighting</a><a href="pages/tripods-support.html">Tripods &amp; support</a>
+                </div>
+                <div class="footer-column">
+                    <h2>Customer support</h2>
+                    <a href="pages/contact-us.html">Contact us</a><a href="pages/shipping-information.html">Shipping information</a><a href="pages/returns-refunds.html">Returns &amp; refunds</a><a href="pages/warranty.html">Warranty</a><a href="pages/faqs.html">FAQs</a>
+                </div>
+                <div class="footer-column">
+                    <h2>Discover</h2>
+                    <a href="pages/about-us.html">About us</a><a href="pages/photography-guides.html">Photography guides</a><a href="pages/blog.html">Blog</a><a href="pages/brands.html">Brands</a><a href="pages/buying-guides.html">Buying guides</a>
+                </div>
+                <div class="footer-column">
+                    <h2>Follow us</h2>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://www.youtube.com/" target="_blank" rel="noreferrer">YouTube ↗</a><a href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook ↗</a><a href="https://www.tiktok.com/" target="_blank" rel="noreferrer">TikTok ↗</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Edris Camera Co. All rights reserved.</span>
+            <div><a href="pages/privacy-policy.html">Privacy policy</a><a href="pages/terms-of-service.html">Terms of service</a></div>
+            <span>Made for the moments that matter.</span>
+        </div>
+    </footer>
+
+    <dialog class="shopping-list-dialog" id="shopping-list-dialog" aria-labelledby="shopping-list-title">
+        <div class="shopping-list-header">
+            <div>
+                <p class="eyebrow eyebrow--dark">YOUR COLLECTION</p>
+                <h2 id="shopping-list-title">Saved <em>for you.</em></h2>
+            </div>
+            <button class="shopping-list-close" type="button" aria-label="Close your lists">×</button>
+        </div>
+        <div class="shopping-list-tabs" role="tablist" aria-label="Your saved items">
+            <button id="favorites-tab" type="button" role="tab" aria-selected="true" aria-controls="favorites-panel" data-list-tab="favorites">Favorites <span class="favorites-count-text">0</span></button>
+            <button id="bag-tab" type="button" role="tab" aria-selected="false" aria-controls="bag-panel" data-list-tab="bag">My bag <span class="bag-count-text">0</span></button>
+        </div>
+        <section class="shopping-list-panel" id="favorites-panel" role="tabpanel" aria-labelledby="favorites-tab" data-panel="favorites">
+            <div class="shopping-list-items favorites-items"></div>
+            <p class="shopping-list-empty favorites-empty">No favorites yet. Tap the heart on a product to save it here.</p>
+        </section>
+        <section class="shopping-list-panel" id="bag-panel" role="tabpanel" aria-labelledby="bag-tab" data-panel="bag" hidden>
+            <div class="shopping-list-items bag-items"></div>
+            <p class="shopping-list-empty bag-empty">Your bag is empty. Explore the featured gear to find your next favorite.</p>
+            <div class="shopping-list-summary"><span>Subtotal</span><strong class="bag-subtotal">$0.00</strong></div>
+            <a class="button shopping-list-checkout" href="Checkout.html">Continue to checkout <span aria-hidden="true">↗</span></a>
+        </section>
+    </dialog>
+
+    <dialog class="product-modal" aria-labelledby="product-modal-title">
+        <button class="product-modal__close" type="button" aria-label="Close product details">×</button>
+        <div class="product-modal__layout">
+            <div class="product-modal__visual">
+                <span class="product-modal__badge"></span>
+                <div class="product-modal__stage">
+                    <img class="product-modal__image" alt="">
+                </div>
+                <div class="product-viewer-controls" aria-label="Product image controls">
+                    <button type="button" data-viewer-action="zoom-out" aria-label="Zoom out">−</button>
+                    <button type="button" data-viewer-action="reset" aria-label="Reset product view">Reset view</button>
+                    <button type="button" data-viewer-action="zoom-in" aria-label="Zoom in">+</button>
+                    <button type="button" data-viewer-action="rotate-left" aria-label="Rotate left">↶</button>
+                    <button type="button" data-viewer-action="rotate-right" aria-label="Rotate right">↷</button>
+                </div>
+                <p class="product-modal__hint">Drag the image or use the arrows to explore the view.</p>
+            </div>
+            <div class="product-modal__details">
+                <p class="product-modal__eyebrow">EDRIS CAMERA CO. / FEATURED GEAR</p>
+                <p class="product-modal__rating"></p>
+                <h2 id="product-modal-title"></h2>
+                <p class="product-modal__price"></p>
+                <p class="product-modal__description"></p>
+                <h3>Key features</h3>
+                <ul class="product-modal__features"></ul>
+                <h3>Specifications</h3>
+                <dl class="product-modal__specifications"></dl>
+                <p class="product-modal__benefit"></p>
+                <div class="product-modal__actions">
+                    <button class="button modal-add-to-cart" type="button">Add to bag <span aria-hidden="true">+</span></button>
+                    <button class="buy-now modal-buy-now" type="button">Buy now ↗</button>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+    <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
